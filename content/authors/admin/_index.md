@@ -2,7 +2,10 @@
 # Display name
 title: 余通
 
-# Full name
+# Name pronunciation (optional)
+name_pronunciation: Chien Shiung Wu
+
+# Full name (for SEO)
 first_name: Tong
 last_name: Yu
 
@@ -47,5 +50,6 @@ work:
     company_logo: ''
     date_start: 2021-01-01
     date_end: ''
-    summary: |2-
+    summary: |
       Software engineer
+---      
