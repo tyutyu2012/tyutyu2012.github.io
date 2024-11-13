@@ -2,9 +2,6 @@
 # Display name
 title: 余通
 
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
-
 # Full name (for SEO)
 first_name: Tong
 last_name: Yu
