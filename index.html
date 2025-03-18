@@ -227,6 +227,8 @@
                 console.log(dayOfWeek)
                 // Find Monday of the current week
                 let monday = new Date(today);
+
+                console.log(monday)
                 monday.setDate(today.getDate() - (dayOfWeek === 0 ? 6 : dayOfWeek - 1) + (offset * 7));
 
                 console.log(monday)
@@ -237,12 +239,16 @@
                 let weekDates = [];
 
                 function formatDate(date) {
-                    return date.toISOString().slice(5, 10).replace("-", "/"); // MM/DD format
+                    let month = String(date.getMonth() + 1).padStart(2, '0'); // Ensure two-digit month
+                    let day = String(date.getDate()).padStart(2, '0'); // Ensure two-digit day
+                    return `${month}/${day}`;
                 }
 
                 for (let i = 0; i < 7; i++) {
                     let day = new Date(monday);
+                    console.log(day)
                     day.setDate(monday.getDate() + i);
+                    console.log(formatDate(day))
                     weekDates.push(formatDate(day));
                 }
 
